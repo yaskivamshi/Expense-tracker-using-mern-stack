@@ -21,7 +21,7 @@ const API_URL = import.meta.env.VITE_API_BASE_URL;
 
     try {
       const res = await axios.post(
-        "${API_URL}/api/auth/login",
+        `${API_URL}/api/auth/login`,
         { email, password },
         { headers: { "Content-Type": "application/json" } }
       );
