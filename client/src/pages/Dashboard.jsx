@@ -37,7 +37,7 @@ const Dashboard = () => {
         return;
       }
 
-      const res = await axios.get("http://localhost:5000/api/expenses", {
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/expenses`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setExpenses(res.data);
@@ -64,7 +64,7 @@ const Dashboard = () => {
         return;
       }
 
-      await axios.put(`http://localhost:5000/api/expenses/edit/${selectedExpense._id}`, expenseData, {
+      await axios.put(`${import.meta.env.VITE_API_URL}/api/expenses/edit/${selectedExpense._id}`, expenseData, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -107,7 +107,7 @@ const Dashboard = () => {
         return;
       }
 
-      await axios.delete(`http://localhost:5000/api/expenses/delete/${id}`, {
+      await axios.delete(`${import.meta.env.VITE_API_URL}/api/expenses/delete/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
