@@ -17,7 +17,7 @@ const Signup = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/register", { name, email, password });
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}/api/auth/signup`, { name, email, password });
 
       alert("Signup successful! Redirecting to login...");
       navigate("/login");
