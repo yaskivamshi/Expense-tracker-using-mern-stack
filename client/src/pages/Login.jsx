@@ -13,8 +13,7 @@ const Login = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  const API_URL = process.env.REACT_APP_API_URL || "https://expense-tracker-using-mern-stack-1wuw.vercel.app";
-
+const API_URL = import.meta.env.VITE_API_BASE_URL;
   const handleLogin = async (e) => {
     e.preventDefault();
     setError("");
