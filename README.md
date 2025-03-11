@@ -74,15 +74,13 @@ The frontend will be available at `http://localhost:5173/`.
 - User authentication (Login/Signup)
 - Add, edit, and delete income/expense transactions
 - Categorization of transactions
-- Interactive charts for visualizing spending trends
 - Real-time updates using React's state management
 
 ## 📌 Usage
 
 1. Sign up and log in to your account.
 2. Add your income and expense transactions.
-3. View analytics for your expenses.
-4. Edit or delete transactions as needed.
+. Edit or delete transactions as needed.
 
 ## 🤝 Contributing
 
