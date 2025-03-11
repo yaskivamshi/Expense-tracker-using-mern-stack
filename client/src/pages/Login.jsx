@@ -13,6 +13,7 @@ const Login = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
+const API_URL = import.meta.env.VITE_API_BASE_URL;
   const handleLogin = async (e) => {
     e.preventDefault();
     setError("");
@@ -20,7 +21,7 @@ const Login = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        `${API_URL}/api/auth/login`,
         { email, password },
         { headers: { "Content-Type": "application/json" } }
       );
