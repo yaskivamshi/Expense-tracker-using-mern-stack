@@ -1,5 +1,4 @@
 
-
 import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -13,7 +12,6 @@ const Login = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-const API_URL = import.meta.env.VITE_API_BASE_URL;
   const handleLogin = async (e) => {
     e.preventDefault();
     setError("");
@@ -21,7 +19,7 @@ const API_URL = import.meta.env.VITE_API_BASE_URL;
 
     try {
       const res = await axios.post(
-        `${API_URL}/api/auth/login`,
+        "http://localhost:5000/api/auth/login",
         { email, password },
         { headers: { "Content-Type": "application/json" } }
       );
