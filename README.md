@@ -1,10 +1,14 @@
-# expense-tracker-using-mern-stack
+# Expense-tracker-using-mern-stack
 Expense Management System (MERN Stack)
 # Expense Tracker (MERN Stack)
 
 ## 📌 Project Overview
 
 An expense tracker application built using the **MERN (MongoDB, Express, React, Node.js) stack**. This application allows users to track their income and expenses, categorize transactions, and visualize spending trends.
+
+
+### 🌐 Live Demo
+- **Frontend (React App)**: [Expense Management System Live](https://expense-management-system-using-mern-1.onrender.com)
 
 ## 🛠️ Tech Stack
 
@@ -81,6 +85,14 @@ The frontend will be available at `http://localhost:5173/`.
 1. Sign up and log in to your account.
 2. Add your income and expense transactions.
 . Edit or delete transactions as needed.
+
+
+## 📸 Screenshots
+_Add UI screenshots here_
+![image](https://github.com/user-attachments/assets/df0e30d2-de05-494d-b5c0-42b02ad56343)
+![image](https://github.com/user-attachments/assets/aa1fbc22-de2f-4696-9837-560dede9b54b)
+![image](https://github.com/user-attachments/assets/b848d2fd-d56d-466c-b19b-9ade9faa4d9b)
+
 
 ## 🤝 Contributing
 
